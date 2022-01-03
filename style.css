@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.scroll-snap-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+
+.scroll-element {
+  height: 100vh;
+  background: #003049;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+
+  scroll-snap-align: start;
+}
+
+.scroll-element:nth-child(even) {
+  background: #f1faee;
+  color: #003049;
+}
